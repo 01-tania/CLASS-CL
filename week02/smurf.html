@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smurf Safety Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, sans-serif;
+      background: #111;
+      color: #333;
+    }
+
+
+
+    /* Horizontal Snap Container */
+    .book {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+    }
+
+    /* Each Page */
+    .page {
+      flex: 0 0 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .cover { 
+       /* HOW TO OVERLAY?!!*/
+      background: rgba(49, 164, 240,); 
+      background-image: url(images/smurf_background.jpg);
+
+      color: rgb(22, 169, 227); }
+      
+
+    .ch1   { 
+      background: #1793e6; 
+    }
+
+    .ch2   { 
+      background: #0784d7; 
+    }
+
+    .back   { 
+      background: #0473bd; 
+    }
+
+    /* Content Box */
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 4px;
+      max-width: width/2;
+    }
+
+  
+
+    h1, h2 { margin-top: 0; color: #2f3030; }
+
+    .cover h1 { 
+      font-size: 3.5rem;  
+
+    }
+
+    li { margin-bottom: 10px; }
+  </style>
+</head>
+
+<body>
+
+  <div class="book">
+    
+    <!-- PAGE 1: COVER -->
+    <section class="page cover">
+      <div class="card">
+        <h1> The Smurf Guides: Life-Saving Advice!</h1>
+        <p>A forest safety guide for the little ones.</p>
+        <p><strong> Scroll Right ➔ </strong></p>
+      </div>
+    </section>
+
+    <!-- PAGE 2: CHAPTER 1 -->
+    <section class="page ch1">
+      <div class="card">
+        <h2>Chapter 1: Watch Out for Azrael!</h2>
+        <ul>
+          <li><strong>Climb Birch Trees:</strong> Azrael can't climb smooth white birch bark, but you can!</li>
+          <li><strong>Poke Sarsaparilla Leaves:</strong> Gargamel puts glue on bushes. Poke leaves with a stick first—if it sticks, run!</li>
+          <li><strong>Hide Near Berries:</strong> Your blue skin blends right in with blueberries and bluebells!</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PAGE 3: CHAPTER 2 -->
+    <section class="page ch2">
+      <div class="card">
+        <h2>Chapter 2: Berry & Emergency Rules</h2>
+        <ul>
+          <li><strong>Count the Leaves:</strong> Safe Smurfberries have 5 green leaves. Bad berries only have 3 leaves!</li>
+          <li><strong>Acorn Whistle:</strong> 3 quick whistle squeaks mean RED ALERT. Head to the subterranean tree tunnels!</li>
+          <li><strong>If You Get Lost:</strong> Stay where you are and sing the <i>La-La Song</i> loudly so Papa Smurf can find you.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PAGE 4: BACK-->
+    <section class="page back">
+      <div class="card">
+        <h1>THE END.</h1>
+        <p> <i>Stay Safe Little Ones</i></p>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
