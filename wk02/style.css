@@ -1,0 +1,58 @@
+.flicker-background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('background.png'); 
+  background-size: repeat;
+  background-position: center;
+  
+  animation: flicker 4s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.01;
+  }
+  40% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}
+
+
+body {
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  background-color: #f0f0f0; 
+  font-family: Helvetica, sans-serif;
+  font-size: 4em;
+  background-color: rgba(1, 0, 0, 0.936);
+}
+
+#story-box {
+  width: 100%vw;
+  padding: 20%;
+  height: 600px;
+  color: rgb(243, 242, 242);            
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  text-align: center;
+}
+
+
+
+
