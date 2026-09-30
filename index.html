@@ -1,41 +1,115 @@
-<html>
-    <head>
-        <title> test Page </title>
-        <style>
-            .h1{
-            font-size: 60px;
-            font-family: Helvetica, sans-serif;
-            }
-           
-            .h2{
-            font-size: 40px;
-            font-family: Helvetica, sans-serif;
-            color: rgb(rgb(85, 85, 231));
-            }
-            
-            .p{
-            font-size: 16px;
-            font-family: Helvetica, sans-serif;
-            }
-
-            .card-image {
-            width: 100%;
-            height: 50%;
-            object-fit: cover;
-            }
-        </style>
-    </head>
-    <body>
-        <h1 class="h1"> Topographic Map: Lazer Cutting </h1>
-        <h2 class="h2"> Exploratory Making: Try something new </h2>
-        <img src="https://img.notionusercontent.com/s3/prod-files-secure%2Fe006b2f3-e264-81b1-b90e-00038f6eb7ca%2F464f69ca-dbe7-4559-9c93-df9199daaf45%2F6.png/size/w=1960?tok=eyJhbGciOiJFUzI1NiIsImtpZCI6IlI3dzVrRnREIiwidHlwIjoiSldUIn0.eyJzcGFjZUlkIjoiZTAwNmIyZjMtZTI2NC04MWIxLWI5MGUtMDAwMzhmNmViN2NhIiwiZmlsZUlkIjoiNDY0ZjY5Y2EtZGJlNy00NTU5LTljOTMtZGY5MTk5ZGFhZjQ1IiwiYWN0b3IiOiJub3Rpb25fdXNlcjozOGVkODcyYi01OTRjLTgxODQtYjE2Yi0wMDAyZDlhNTkyZTEiLCJyZWNvcmQiOiJibG9jazozYTM2YjJmMy1lMjY0LTgwNTktYTgzOC1mMTg2OWU0ZjcyZDQiLCJleHAiOjE3ODg0Nzg3NTZ9.yxyXeGDEGGGSBBIshr-6_5xIp9TxfX-zwK2DRfYp1r184MdeuPxalR4AEpfTXbLvVbHH6lh9Pgw546Nj23rmcA&imgBuildSrc=createSecureFileAccessTokenImageUrl&mtd=com "
-             alt="Topographic Map Preview"
-             class="card-image"
-        />
-
-        <p class="p"> An exploration of terrain visualization, 3D elevation modeling, and geographic data representation using layered contour mapping techniques.</p>
-        <a href="https://app.notion.com/p/Project-01-Topographic-Map-3a36b2f3e26480e8915ce55ee13aef78"> View Project on Notion </a>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Stardew Valley Character Should You Marry?</title>
+  
+    <link rel="stylesheet" href="style.css">
+</head>
 
 
+<body>
+  <iframe 
+    id="p5-bg-iframe" 
+    src="https://editor.p5js.org/tb3707/embed/GEXCDyHEF">
+  </iframe>
+
+  <div class="app-card">
+    <!-- HEADER -->
+    <header class="header">
+      <h1>Pelican Town Matchmaking Services.</h1>
+    </header>
+
+
+
+
+    <main>
+      <!-- 1. START SCREEN -->
+      <section id="start-screen" class="screen active">
+        <p>Match not guranteed. 999 gold per consultation (non-refundable).</p>
+        <br>
+        <button id="start-btn" class="primary-btn">Begin</button>
+      </section>
+
+
+
+
+
+      <!-- 2. QUIZ SCREEN -->
+      <section id="quiz-screen" class="screen">
+        <span id="question-tracker" class="tracker">Question 1 of 10</span>
+        <h2 id="question-text" class="question-title">Questions</h2>
+        <div id="options-container" class="options-grid">
+        </div>
+      </section>
+
+
+
+
+
+    <!-- 3. RESULTS SCREEN -->
+    <section id="results-screen" class="screen">
+    <div class="results-header">
+        <h1 class="results-title">CONGRATULATIONS: YOU ACUTALLY GOT A MATCH!</h1>
+    </div>
+
+    <!-- Main Card Display -->
+    <div class="result-card">
+        <div class="card-left">
+        <div class="portrait-frame">
+            <img id="character-img" src="images/penny.png" alt="Character Portrait">
+            <div id="match-percent" class="match-badge">99% Match</div>
+        </div>
+        </div>
+
+        <div class="card-right">
+        <h2 id="character-name">Penny</h2>
+        <p id="character-title" class="sub-title">The Teacher</p>
+
+        <div class="heart-meter">
+            ♥ ♥ ♥ ♥ ♥ 
+        </div>
+
+        <p id="character-description" class="bio-text">
+            Penny is gentle, quiet, and devoted to tutoring Jas and Vincent. She spends her free time reading in the sun.
+        </p>
+
+        <div class="loved-gifts-box">
+            <span class="gift-icon">🎁</span> <strong>Loved Gifts:</strong>
+            <p id="character-gift">Melon, Poppy, Red Plate, Emerald, Diamond</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Match Explanation Box -->
+    <div class="explanation-box">
+        <h3>Why You Belong Together?</h3>
+        <p id="match-reason">Your kind heart and desire for stability make you an ideal match. You'll create a warm, loving home together in the valley.</p>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button id="restart-btn" class="primary-btn">Find Love Again?</button>
+
+    </div>
+    </section>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Find Your Stardew Valley Soulmate.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
+
+
+
+
+
+
